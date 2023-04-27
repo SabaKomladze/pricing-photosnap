@@ -232,6 +232,15 @@ span {
   cursor: pointer;
   margin-top: 40px;
 }
+.invite:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #fff;
+}
+.plan:hover {
+  background-color: #dfdfdf;
+  color: #000;
+}
 .pro {
   background-color: #000000;
   position: relative;
