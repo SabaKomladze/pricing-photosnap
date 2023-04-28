@@ -207,14 +207,25 @@ input[type="checkbox"]::before {
   font-size: 40px;
   line-height: 48px;
   letter-spacing: 4.16667px;
-  text-transform: toppercase;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.number {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 4.16667px;
   color: #000000;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 16px;
 }
-span {
+.dark {
+  color: #fff;
+}
+.per {
   font-size: 15px;
   line-height: 25px;
   color: #000000;
