@@ -144,6 +144,7 @@ input[type="checkbox"] {
   transition: 0.5s;
   cursor: pointer;
 }
+
 input[type="checkbox"]::before {
   content: "";
   position: absolute;
@@ -151,10 +152,13 @@ input[type="checkbox"]::before {
   height: 24px;
   border-radius: 50%;
   top: 5px;
-  left: 0;
+  left: -5px;
   transition: 0.5s;
   transform: scale(1.1);
   background: #000000;
+}
+input[type="checkbox"]:checked::before {
+  transform: translateX(40px);
 }
 .switch {
   display: flex;
@@ -224,6 +228,12 @@ input[type="checkbox"]::before {
 }
 .dark {
   color: #fff;
+}
+.per-second,
+.monthofyear-second {
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.6;
 }
 .per {
   font-size: 15px;
@@ -649,6 +659,9 @@ footer {
     color: #000000;
     margin-top: 160px;
   }
+  .features {
+    margin-bottom: 112px;
+  }
 }
 @media (min-width: 1440px) {
   #photo-tab {
@@ -681,7 +694,7 @@ footer {
   }
   .features {
     width: 44.7%;
-    margin: 0 auto;
+    margin: 0 auto 160px;
   }
   .price {
     text-align: center;
